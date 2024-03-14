@@ -11,3 +11,4 @@ mainEl.style.backgroundColor = "var(--main-bg)";
 mainEl.innerHTML = '<h1>DOM Manipulation</h1>';
 
 //Add a class of flex-ctr to mainEl.
+mainEl.classList = 'flex-ctr';
