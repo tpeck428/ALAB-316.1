@@ -37,6 +37,14 @@ var menuLinks = [
   ];
 
   //Iterate over the entire menuLinks array and for each "link" object
-  menuLinks.forEach(listItems =>{
-    console.log(listItems);
+  menuLinks.forEach(menuLinks => {
+    console.log(menuLinks);
+     // Create an <a> element.
+    const aElem = document.createElement('a');
+    //On the new element, add an href attribute with its value set to the href property of the "link" object.
+    aElem.setAttribute('href', menuLinks.href);
+    //On the new element, add an href attribute with its value set to the href property of the "link" object.
+    aElem.append(menuLinks.text);
+    //Append the new element to the topMenuEl element.
+    document.getElementById('top-menu').appendChild(aElem);
   })
